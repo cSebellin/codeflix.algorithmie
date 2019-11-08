@@ -1,6 +1,6 @@
 import { throws } from "assert"
 
-export default function transcription(sequence) {  
+export default function transcription(name) {  
     var seq =''
     for(let i = 0 ; i < name.length ; i++){
         if(name[i] === 'G'){
@@ -15,8 +15,10 @@ export default function transcription(sequence) {
         else if(name[i] === 'A'){
             const U = 'U'
         }
-        else
-        throw `Nucleotide ${name} does not exist`      
+        else{
+            throw `Nucleotide ${name} does not exist`      
+        }
+        
         
     
     }
